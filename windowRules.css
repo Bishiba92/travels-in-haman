@@ -1,0 +1,352 @@
+a {
+	text-decoration: none;
+	color: #160c05;
+	text-align: center;
+	box-sizing: border-box;
+	grid-area: header;
+	position: absolute;
+	border: 3px gold;
+	border-style: inset;
+	border-shadow: inset 0px 0px 0px 10px red;
+	padding-left: 10px;
+}
+.hoverItemEq {
+    transition: all 0.3s ease 0s;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    height: 2px;
+    background-color: rgb(71, 83, 102);
+}
+
+.hoverItemEq {
+    cursor: pointer;
+    -webkit-box-flex: 0;
+    flex: 0 0 182px;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+html {
+	background-color: black;
+}
+
+body {
+	margin: auto;
+	max-width: 600px;
+	height: 600px;
+	background-color: black;
+	padding: 0px;
+	font-family: serif;
+	padding-left: 10px;
+}
+
+.canvas {
+	box-sizing: border-box;
+	display: none;	
+	position: absolute;
+	border: 6px gold;
+	border-style: inset;
+	border-shadow: inset 0px 0px 0px 10px red;
+	z-index: 10;
+}
+
+.window {
+	box-sizing: border-box;
+	display: none;	
+	position: absolute;
+	border: 3px gold;
+	border-style: inset;
+	border-shadow: inset 0px 0px 0px 10px red;
+	padding-left: 10px;
+}
+
+.menu {
+	background-color: maroon;
+}
+
+.topMenuButtons {
+	box-sizing: border-box;
+	font-size: 35px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.help {
+	cursor: help;
+}
+
+#locationWindow {
+	text-align: center;
+	text-size: 50px;
+	background-color: maroon;
+}
+
+#Frame {
+	text-align: left;
+	font-size: 22px;
+	color: black;
+	background-color: maroon;
+}
+
+#playerStatWindow {
+	background-color: maroon;
+}
+
+#buttonWindow {
+	background-color: maroon;
+}
+
+#mapWindow {
+	background-color: #0f768d;
+	text-align: left;
+	line-height: 0;
+	z-index: 1;
+}
+
+#mapPlayerWindow {
+	background-color: transparent;
+	z-index: -1;
+}
+
+#textWindow {
+	background-color: maroon;
+}
+
+#healthGauge {
+	position: absolute;
+	width: 126px;
+	height: 52px;
+	top: 45px;
+}
+
+#wikiWindow {
+	text-align: center;
+	color: #d7964a;
+    background: -webkit-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+	position: absolute;
+	width: 100px;
+	height: 100px;
+    border-radius: 18px;
+	border-style: groove;
+	z-index: 102;
+	opacity: 90%;
+	font-size: 20px;
+	padding-left: 10px;
+	line-height: 18px;
+	padding-top: 4px;
+	min-height: 40px;
+	min-width: 100px;
+}
+
+#itemHover {
+	text-align: center;
+	color: #d7964a;
+    background: -webkit-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+	position: absolute;
+	width: 100px;
+	height: 100px;
+    border-radius: 18px;
+	border-style: groove;
+	z-index: 10;
+	opacity: 90%;
+	font-size: 20px;
+	padding-left: 10px;
+	line-height: 22px;
+	padding-top: 4px;
+	min-height: 40px;
+	min-width: 100px;
+	display: none;
+	border-top-left-radius: 0px;
+	}
+
+.contentText {
+	color: #d7964a;
+}
+
+#attributeText {
+	color: #617df3;
+}
+
+*|h2 {
+	color: silver; /*Ljusgrå*/
+	font-size: x-large;
+}
+
+/*MAP############################################################*/
+#map {
+	align: center;
+	-webkit-box-flex: 0;
+    flex: 0 0 182px;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  display: block;
+}
+
+#navlist li, #navlist a {
+  display: block;
+}
+
+.map-tile {
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	align-content: center;
+}
+
+#mapGrass {
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/tileset_orig.png) 0 0;
+}
+
+#mapTrees {
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/tileset_orig.png) -48px 0;
+}
+
+#mapTavern {
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/tileset_orig.png) 0px -48px;
+}
+
+#mapMountain {
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/tileset_orig.png) -48px -48px;
+}
+
+#mapTown {
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/tileset_orig.png) 0 -96px;
+}
+
+#mapLargeRuins {
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/tileset_orig.png) 0 -144px;
+}
+
+#mapSmallRuins {
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/tileset_orig.png) -48px -144px;
+}
+
+#mapCatacombs {
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/tileset_orig.png) 0 -192px;
+}
+
+#mapTemple {
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/tileset_orig.png) -48px -192px;
+}
+
+#empty {
+  width: 48px;
+  height: 48px;
+  background: url(img/tileset.png) -48px -48px;
+  color: #cc7832;
+}
+
+/*CHARACTER###################################################################*/
+
+#characterDown {
+  width: 48px;
+  height: 48px;
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/charset_orig.png?1630605865) -48px 0;
+}
+
+#characterLeft {
+  width: 48px;
+  height: 48px;
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/charset_orig.png?1630605865) -48px -48px;
+}
+
+#characterRight {
+  width: 48px;
+  height: 48px;
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/charset_orig.png?1630605865) -48px -96px;
+}
+
+#characterUp {
+  width: 48px;
+  height: 48px;
+  background: url(https://bishiba.weebly.com/uploads/2/5/6/5/25657229/charset_orig.png?1630605865) -48px -144px;
+}
+
+/*ITEM############################################################*/
+
+.inventoryHolder {
+	width: 32px;
+	height: 32px;
+	/*background: url(img/equipment.png) 0 0;*/
+	box-sizing: border-box;
+	background-color: maroon;
+	border-style: solid;
+	border-width: 3px;
+	border-left-color: #600b13;
+	border-right-color: #600b13;
+	border-bottom-color: #ae2812;
+	border-top-color: #3f0b18;
+}
+
+.equipmentHolder {
+
+	width: 64px;
+	height: 64px;
+	/*background: url(img/equipment.png) 0 -32px;*/
+	box-sizing: border-box;
+	background-color: maroon;
+	border-style: solid;
+	border-width: 5px;
+	border-left-color: #600b13;
+	border-right-color: #600b13;
+	border-bottom-color: #ae2812;
+	border-top-color: #3f0b18;
+}
+
+.inventorySlots {
+	width: 32px;
+	height: 32px;
+}
+
+.item {
+	
+}
+
+#icons {
+  width: 48px;
+  height: 48px;
+  background: url(img/tileset.png) 0 0;
+}
+
+#store {
+	background: url(img/tileset.png) 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

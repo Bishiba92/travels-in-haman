@@ -1,0 +1,30 @@
+.wiki {
+	font-family:monospace;
+	font:monaco;
+}
+
+.wikiButtons {
+	background: blue;
+    background: -webkit-linear-gradient(bottom, #6872ad 0%,#949fe0 100%);
+	position: absolute;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	width: 100px;
+	height: 20px;
+	z-index: 10;
+}
+
+.window {
+	display: none;	
+	grid-area: header;
+	position: absolute;
+	border: 5px gold;
+	border-style: groove;
+}
+
+.haman {
+	width: 120px;
+	height: 180px;
+	background: url(img/worldMap.png) -990px -290px;
+}
